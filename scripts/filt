@@ -1,0 +1,4 @@
+#!/bin/sh
+# replace buffer with output of command
+# filter buffer through command
+"$@" < "$BUF" > "$BUF.out" && mv "$BUF.out" "$BUF"

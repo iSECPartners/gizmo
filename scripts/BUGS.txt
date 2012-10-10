@@ -1,0 +1,50 @@
+Script bugs and feature requests
+
+-----------
+BUGS:
+
+- none reported
+
+
+---------------
+FEATURE Requests:
+All requests/responses
+  - general summary tool.  runs over all requests and responses
+    that are shown and optionally show url parameters, post
+    parameters, sent cookies, set-cookie responses, forms in
+    response.  this might be one tool with flags or several
+    tools.
+  - tool for encoding or decoding all requests and responses?
+    - ie. deflate, gzip.
+
+One request or response:
+  - tool for opening editable form in browser that lets you
+    tweak the posted data - done already
+    (note: nice bonus, all forms you submit in the browser
+     will generate gizmo logs when browser is configured
+     to use proxy).
+  - tool for opening editable form in browsre for tweaking
+    the URL parameters.
+  - tool for opening a page with all of the forms from the
+    chosen response, except all fields editable and none hidden.
+
+  - tool for editing req parameters (url and post).  This just
+    takes the params out of the original, lets you edit them,
+    then puts them back in.  you'd use gizmo "send" to send
+    it after tweaking.
+  - tool for editing req cookies.
+
+  - tool for invoking certain toolbar modules on the current
+    request's URL.  maybe some way to specify certain fields
+    to fuzz or others to exclude.  Cookies will get carried over
+    to toolbar test case.
+
+Text in a request or response:
+  - tool for encoding and decoding various selected data    
+    - base64, modified base 64, with and without trailing ='s
+    - url encoding
+    - extra url encoding for obfuscation
+    - non-minimal utf8 encoding
+    - gzip, bzip2, deflate, ...
+  - tool for displaying decoded data
+    - utf8 to unicode

@@ -1,0 +1,32 @@
+<launch4jConfig>
+  <headerType>gui</headerType>
+  <outfile>gizmo.exe</outfile>
+  <jar>gizmo.jar</jar>
+  <classPath>
+    <mainClass>gizmo.Gizmo</mainClass>
+    <cp>lib/appframework-1.0.3.jar;lib/bcprov-ext-jdk15-141.jar;lib/commons-httpclient-3.1.jar;lib/commons-primitives-1.0.jar;lib/swing-worker-1.1.jar;gizmo.jar;jre1.6.0_06/lib/rt.jar</cp>
+    ...
+  </classPath>
+  <singleInstance>
+    <mutexName>gizmo</mutexName>
+    <windowTitle>gizmo</windowTitle>
+  </singleInstance> 
+  <jre>
+    <!-- Specify one of the following or both -->
+    <path>jre1.6.0_06</path>
+    <minVersion>1.5.0</minVersion>
+  </jre> 
+  <versionInfo>
+    <fileVersion>x.x.x.x</fileVersion>
+    <txtFileVersion>x.x.x.x</txtFileVersion>
+    <fileDescription>more stuff</fileDescription>
+    <copyright>less stuff</copyright>
+    <productVersion>.10</productVersion>
+    <txtProductVersion>whoopdeedoo edition</txtProductVersion>
+    <productName>stuff</productName>
+    <companyName>no stuff</companyName>
+    <internalName>gizmo</internalName>
+    <originalFilename>gizmo.exe</originalFilename>
+  </versionInfo>
+
+</launch4jConfig>

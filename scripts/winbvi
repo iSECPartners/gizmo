@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# run vim in a new window.
+#
+xterm -e bvi "$BUF"

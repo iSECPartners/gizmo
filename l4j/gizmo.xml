@@ -1,0 +1,25 @@
+<launch4jConfig>
+  <headerType>console</headerType>
+  <outfile>gizmo.exe</outfile>
+  <jar>../obfuscated_gizmo.jar</jar>
+  <classPath>
+    <mainClass>gizmo.Gizmo</mainClass>
+ <!--   <cp>../lib/appframework-1.0.3.jar</cp>
+    <cp>../lib/bcprov-ext-jdk15-141.jar</cp>
+    <cp>../lib/commons-httpclient-3.1.jar</cp>
+    <cp>../lib/commons-primitives-1.0.jar</cp>
+    <cp>../lib/swing-worker-1.1.jar</cp>
+    <cp>../jre1.6.0_06/lib/rt.jar</cp>-->
+    <cp>../gizmo.jar</cp>    
+  </classPath>
+  <singleInstance>
+    <mutexName>gizmo</mutexName>
+    <windowTitle>gizmo</windowTitle>
+  </singleInstance> 
+  <jre>
+    <!-- Specify one of the following or both -->
+    <path>jre1.6.0_06</path>
+    <minVersion>1.5.0</minVersion>
+    <maxHeapSize>512</maxHeapSize>
+  </jre> 
+</launch4jConfig>

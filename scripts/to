@@ -1,0 +1,3 @@
+#!/bin/sh
+# send buffer as input to command
+"$@" < "$BUF"

@@ -1,0 +1,12 @@
+Welcome to gizmo!
+
+Gizmo's goal is to be a small, quick web proxy that's responsive to heavy keyboard users, and includes few geegaws, baubles, and bags tacked onto the side.  One of it's authors is rather used
+to keyboards, and rather used to the small interoperable tool mode of design from the unixy world, so the minimalism is with that in mind.  It sits on a port, listens for connections, and
+acts as a proxy.  The requests and responses that get sent back and forth end up in the summary pane (the left tab).  If you click the intercept button (or press <ctrl>-I), you can see that
+the program's gone into 'intercept' mode by looking at the title bar up top.  The requests in intercept mode will show up in the right tab.  You can edit the requests or drop them (with 'e' 
+and 'd' respectively), or send the with 's'.  Once they're sent, the request and response show up in the summary pane.
+
+This is the basic (and probably most common) gizmo use case.  The summary window and intercept window at first show the status line of the request and response, along with the url.
+If you move the cursor down to a request (using j, k, or the arrow keys), you can expand the request to see the full thing by hitting enter (you contract the expanded version with enter as well).
+To move more quickly through requests, H and G go to the first and last requests (as do Home and End).  To search through the requests, enter a string int he searchbar above the requests 
+and hit enter.  The requests/responses will be narrowed down to the request/response pairs that have a text match.

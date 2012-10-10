@@ -1,0 +1,47 @@
+----------------
+Bugs and Feature Requests.  Feel free to add.
+
+- Request: Set path on startup to include the gizmo directory and the
+  scripts directory (scripts after gizmo).
+
+- Request: some control over where the proxied data is stored.
+  My typical webscarab use is to save a session in one dir,
+  run some tests, then start saving into another dir to run
+  other tests.
+
+- the request has no indication if it is http or https.  This
+  means that scripts have no way to figure it out if they need
+  to do things like replay a request.
+  (btw, response editing might want to keep a way to access
+  the matching request for a similar reaosn -- in case someone
+  wants to take info from a response and build up a request based
+  on it.  For symmetry prob there should be a way to access a 
+  response when editing a request).
+
+- There's no feedback about errors in script commands.  There's
+  no indication that the script even ran or that it completed.
+  All error messages are silently thrown away.  This makes it hard
+  to diagnose errors and also leaves you wondering sometimes if
+  it actually tried to do anything..
+
+- Request: some macro/rewrite rule system on commands.
+  For example, I would like ">" at the start of a command
+  to rewrite to "to " and "<" at the start of a command to
+  rewrite to "frm" and "|" at the start of a command to
+  rewrite to "filt" to support easier use of
+  frm.bat, to.bat and filt.bat.  I don't think these should
+  necessarily be hardwired into the system (although 
+  maybe that's a simpler solution if it turns out other people
+  dont really have rewrite rules they want to use).
+
+
+
+----------------
+Done.  These have been resolved, or rejected.
+
+- proxy doesn't handle the port properly.  ie. go to
+  http://labs:8001/ in proxy and you'll get http://labs/
+
+- modifying $REQ with an editor command doesnt have anye effect
+  on the request after the editor command finishes.
+
